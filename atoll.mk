@@ -12,6 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
